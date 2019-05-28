@@ -9,7 +9,7 @@ public class Word {
     private int index;
     private String name;
     private String definition;
-    private ArrayList<String> tag;
+    private ArrayList<String> tagList;
 
     // Constructor
     public Word(String name, String def) {
@@ -43,11 +43,11 @@ public class Word {
     }
 
     public ArrayList<String> getTag() {
-        return tag;
+        return tagList;
     }
 
     public void setTag(ArrayList<String> tag) {
-        this.tag = tag;
+        this.tagList = tag;
     }
 
     // Methods

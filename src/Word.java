@@ -42,18 +42,18 @@ public class Word {
         this.definition = definition;
     }
 
-    public ArrayList<String> getTag() {
+    public ArrayList<String> getTagList() {
         return tagList;
     }
 
-    public void setTag(ArrayList<String> tag) {
-        this.tagList = tag;
+    public void setTagList(ArrayList<String> tagList) {
+        this.tagList = tagList;
     }
 
     // Methods
     public void printWord() {
 
-        System.out.println(getName() + ": " + getDefinition() + " (tags: " + getTag() + ")");
+        System.out.println(getName() + ": " + getDefinition() + " (tags: " + getTagList() + ")");
 
     }
 
@@ -70,13 +70,13 @@ public class Word {
         setDefinition(wordDefinition);
 
         System.out.print("Please enter the new word tag: ");
-        String wordTag = scanner.nextLine();
+        String wordTagList = scanner.nextLine();
 
         // To ArrayList
-        ArrayList<String> tagArrayList = new ArrayList<>(Arrays.asList(wordTag.split(",")));
+        ArrayList<String> tagArrayList = new ArrayList<>(Arrays.asList(wordTagList.split(",")));
 
-        // Change Tag
-        setTag(tagArrayList);
+        // Change TagList
+        setTagList(tagArrayList);
 
     }
 

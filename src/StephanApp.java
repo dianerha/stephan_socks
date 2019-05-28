@@ -13,10 +13,8 @@ public class StephanApp {
 
 	private void startMainMenu() {
 		while (true) {
-			System.out.println("MainMenu");
-			System.out.println("1. addNote");
-			System.out.println("2. listNote");
-			System.out.println("3. finish");
+			System.out.println(Strings.TEXT_MAIN_MENU);
+			System.out.println(Strings.TEXT_MAIN_OPTIONS);
 
 			System.out.println("type menu num: ");
 			Scanner scanner = new Scanner(System.in);
